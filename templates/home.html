@@ -1,8 +1,80 @@
 <!doctype html>
 <html lanf="ko">
-<head><meta charset="utf-8"><title>Flask Home</title></head>
+<head><meta charset="utf-8"><title>Flask Home</title>
+<style>
+    .card-wrap{
+        display: flex;
+        gap: 10px;
+    }
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    border : 1px solid rgb(222, 224, 221);
+    border-radius : 10px;
+    width: 240px;
+    vertical-align: top;
+    padding: 10px;
+    height: 160px;
+}
+h5{
+    margin: 0;
+}
+.list-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-inline-start: 10px;
+}
+.unorder{
+    list-style: none;
+}
+
+.tag{
+    background-color: #efeded;
+    width: fit-content;
+    padding: 2px 7px;
+    height: fit-content;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+</style>
+</head>
 <body>
-    <h1>{{title}}</h1>
-    <p></p>
+    <h1>아랍 정세 읽기 최적화</h1>
+    <hr>
+    <h2> 1) Problem Statement Canvas  </h2>
+    <div class="card-wrap">
+<div class="card"><h5>고객</h5><p>아랍-중동 전문가, 아랍 전공생, 중동 진출 고려 회사, 아랍 연구원</p></div>
+<div class="card"><h5>컨텍스트</h5><p>아랍 및 중동의 실시간 정세를 찾아보려할 때 </p></div>
+<div class="card"><h5>근본문제</h5><p>아랍 및 중동의 정세를 찾아볼 때 나라별로 찾아보는거 시간이 오래걸리고 불편</p></div>
+<div class="card"><h5>감정적 영향</h5><p>귀찮음, 피로함, 지루함</p></div>
+<div class="card"><h5>정략적 영향</h5><p>아랍어/영어로 된 정보를 수동으로 찾아야 하므로 2-3시간 걸림</p></div>
+<div class="card"><h5>대안</h5><p>CNN, BBC등 해외 뉴스의 중동 뉴스 섹션을 활용하거나 일일이 검색해 봄</p></div>
+<div class="card"><h5>대안의 단점</h5><p>번역에 대한 어려움</p></div>
+</div>
+    <h2> 2) 솔루션  </h2>
+    <ul class="list-lines">
+        <li class="unorder"><span class="tag">Line 1</span>아랍 국가별 실시간 뉴스를 수집하고 정리</li>
+        <li class="unorder"><span class="tag">Line 2</span>실시간 뉴스 트랜드 분석 (실시간 검색처럼 실시간 트렌드 키워드를 언급량에 따라 순위매김)</li>
+        <li class="unorder"><span class="tag">Line 3</span>해외 아랍 뉴스 번역 제공</li>
+      </ul>
+    <h2> 3) 기능 명세 </h2>
+    <ul><li>대륙별 국가별 뉴스 정리
+        <li>실시간 키위드 기능 구현
+        <li>뉴스 요약 시스템
+        <li>지도 시각화
+        <li>뉴스 감정 분석
+    </ul>
+    <h2> 4) 간단한 UX 흐름  </h2>
+    <ul><li>사용자출발
+        <li>프로필 입력
+        <li>관심국가, 트렌드 등록
+        <li>뉴스 찜하기 기능
+    </ul>
+    <h2> 5) 와이어 프레임  </h2>
+    <p>추가</p>
+
 </body>
 </html>
